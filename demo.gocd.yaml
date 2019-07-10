@@ -4,8 +4,8 @@ pipelines:
     group: todo-list-group
     materials:
       git-repo:
-        git: https://github.com/gotham-learning/vue-gotham-todo.git
-        branch: master
+        git: https://github.com/myx4play/vue-gotham-todo.git
+        branch: with_script
     stages:
       - install-and-build:
           jobs:
