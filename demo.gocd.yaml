@@ -8,8 +8,13 @@ pipelines:
         branch: master
     stages:
       - first-stage:
-          jobs:
+          approval:
+            type: manual
+          build:
             list:
               tasks:
                 - exec:
                     command: ./gotham-todo/build.sh
+                - exec:
+                    command: ./gotham-todo/apply-infrastructure.sh
+
