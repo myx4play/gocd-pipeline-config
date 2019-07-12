@@ -8,7 +8,8 @@ pipelines:
         branch: master
     stages:
       - zero-stage:
-          approve: manual
+          approve:
+            type: manual
           jobs:
             list:
               tasks:
@@ -17,6 +18,7 @@ pipelines:
 
       - first-stage:
           approve: manual
+            type: manual
           jobs:
             list:
               tasks:
