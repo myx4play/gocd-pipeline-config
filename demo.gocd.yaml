@@ -7,7 +7,7 @@ pipelines:
         git: https://github.com/myx4play/vue-gotham-todo
         branch: master
     stages:
-      - approves2:
+      - zero-stage:
           approve: manual
       - first-stage:
           build:
