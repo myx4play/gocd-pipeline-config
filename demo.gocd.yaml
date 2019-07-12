@@ -17,7 +17,7 @@ pipelines:
                     command: ls
 
       - first-stage:
-          approve: manual
+          approve:
             type: manual
           jobs:
             list:
