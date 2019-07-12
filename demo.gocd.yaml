@@ -9,6 +9,12 @@ pipelines:
     stages:
       - zero-stage:
           approve: manual
+          jobs:
+            list:
+              tasks:
+                - exec:
+                    command: ls
+
       - first-stage:
           approve: manual
           jobs:
