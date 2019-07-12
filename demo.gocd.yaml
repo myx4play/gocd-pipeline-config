@@ -8,6 +8,7 @@ pipelines:
         branch: master
     stages:
       - first-stage:
+          approve: manual
           jobs:
             list:
               tasks:
